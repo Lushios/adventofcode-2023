@@ -3,7 +3,6 @@ with open("input.txt") as file:
 
 max_y = len(data) - 1
 max_x = len(data[0]) - 1
-print(max_x)
 
 
 def check_if_number_is_valid(x1: int, x2: int, y: int, number):
@@ -45,9 +44,7 @@ def process_line(line_number: int, line: str):
             correction += number_length - 1
             valid = check_if_number_is_valid(number_left_edge, number_right_edge, line_number, number)
             if valid:
-                print(number)
                 line_sum += int(number)
-    print(line_number, line_sum)
     return line_sum
 
 
