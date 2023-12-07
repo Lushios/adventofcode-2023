@@ -45,7 +45,6 @@ class Hand:
             if j_count < 5:
                 card_items.pop('J')
                 card_items[max(card_items, key=card_items.get)] += j_count
-        print(card_items)
         cards_count = [value for _, value in card_items.items()]
         if 5 in cards_count:
             combination = CombinationsPriority.FIVE_OF_A_KIND.value
