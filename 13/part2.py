@@ -75,19 +75,6 @@ def process_group(group):
                 print(right_edge)
                 return right_edge
 
-    # for index1, index2 in combinations(range(len(group)), 2):
-    #     if abs(index2 - index1) % 2 == 0:
-    #         continue
-    #     if check_if_lines_are_one_off(group[index1], group[index2]):
-    #         top_edge, bottom_edge = (
-    #             min(index1, index2) + floor(abs(index2 - index1) / 2),
-    #             min(index1, index2) + ceil(abs(index2 - index1) / 2)
-    #         )
-    #         is_symmetrical = check_for_horizontal_symmetry(group, top_edge, bottom_edge, (min(index1, index2), max(index1, index2)))
-    #         if is_symmetrical:
-    #             print(bottom_edge * 100)
-    #             return bottom_edge * 100
-
 
 groups = parse_input(data)
 answer = 0
