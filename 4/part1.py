@@ -13,6 +13,8 @@ def process_line(line: str):
     winning_numbers = get_numbers_from_string(left_part.split(': ')[1])
     actual_numbers = get_numbers_from_string(right_part)
     intersection = [number for number in winning_numbers if number in actual_numbers]
+
+
     line_score = int(pow(2, len(intersection) - 1))
     return line_score
 
